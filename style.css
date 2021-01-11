@@ -1,0 +1,36 @@
+body {
+    background-color: #E8E8E8;
+}
+
+img {
+    width: 80%;
+}
+
+.first {
+    border-top: 20px solid green;
+}
+
+.second {
+    border-radius: 20px;
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .container {
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        width: 90%;
+    }
+}
