@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link href="style.css" rel="stylesheet">
+      <link href="script.js" rel="stylesheet">
 
     <title>Hello, world!</title>
     <style>
@@ -18,10 +19,10 @@
   <body>
     <br><br>
     <div class="container second">
-        <center><img src="img/logo.png"></center>
+        <center><img src="img/logo1.png"></center>
     </div><br>
 
-    <div class="container second" style="border-top: 20px solid green;">
+    <div class="container second first" >
       <div class="container">
              <h1>MOU Generate Form</h1>
        <p><spam style="color:red;">*</spam>Required</p>
@@ -32,7 +33,7 @@
        <div class="container">
        <p>Executive Name<spam style="color:red;">*</spam></p><br>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="email" placeholder="Email Address" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="text" placeholder="Your name" required name="name">
             </form>
       </div>
     </div><br>
@@ -41,7 +42,7 @@
        <div class="container">
        <p>Customer Name <spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="email" placeholder="Customer Name" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="customername">
             </form>
       </div>
     </div><br>
@@ -59,7 +60,7 @@
        <div class="container">
        <p>Place / City <spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Email Address">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required  name="address" id="address" size="50"/><span id="add_err"></span></p>
             </form>
       </div>
     </div><br>
@@ -68,7 +69,7 @@
        <div class="container">
        <p>Product Detail<spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="product">
             </form>
       </div>
     </div><br>
@@ -77,7 +78,7 @@
        <div class="container">
        <p>Amount<spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="type" placeholder="Your answer" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="type" placeholder="Your answer" required name="amount">
             </form>
       </div>
     </div><br>
@@ -118,7 +119,7 @@
        <div class="container">
        <p>Customer Mobile Number <spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="type" placeholder="Your answer" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="type" placeholder="Your answer" required name="Number">
             </form>
       </div>
     </div><br>
@@ -127,7 +128,7 @@
        <div class="container">
        <p>Customer Email ID<spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Email Address">
+               <p><input class="w3-input w3-padding-16" type="email" placeholder="Your answer" required name="email" id="email" size="50" onBlur="email_validation();"><span id="email_err"></p>
             </form>
       </div>
     </div><br>
@@ -136,17 +137,17 @@
        <div class="container">
        <p>GST Number<spam style="color:red;">*</spam></p>
             <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Email Address">
+                <input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="gst">
             </form>
       </div>
     </div><br>
 
     <div class="container second" style="background-color:#E8E8E8;">
-       <div class="container">
+       
             <form action="/action_page.php" target="_blank">
-                <button class="w3-button w3-section w3-green w3-padding">Send</button>
+                <button class="w3-button w3-section w3-green w3-padding-large w3-xlarge">Submit</button>
             </form>
-      </div>
+      
     </div>
    
     <!-- Optional JavaScript; choose one of the two! -->
