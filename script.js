@@ -13,3 +13,13 @@ function email_validation() {
         document.getElementById('email_err').style.color = "#00AF33";
     }
 }
+
+function phonenumber(inputtxt) {
+    var Phoneno = /^\w+([\.\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,3})+$/;
+    if (inputtxt.value.match(phoneno)) {
+        return true;
+    } else {
+        alert("not a valid phone number")
+        return false;
+    }
+}
